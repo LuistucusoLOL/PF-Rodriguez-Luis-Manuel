@@ -1,0 +1,471 @@
+/* index */
+/* productos */
+/* formulario */
+/* sobreMi */
+/* carrito */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+header {
+  grid-area: header;
+  width: 100%;
+}
+
+nav {
+  grid-area: nav;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.imagenes {
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.titulos {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #FE654F;
+  text-decoration: none;
+}
+
+.parrafo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #FE654F;
+}
+
+.encabezado {
+  background-color: white;
+  border: 5px solid black;
+  height: 90px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.cajaDeLogo {
+  height: 70px;
+  position: fixed;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  top: 14.5px;
+}
+
+.cajaDelCarrito {
+  height: 70px;
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  right: 10px;
+}
+
+.navegador {
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  position: fixed;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  right: 0px;
+  top: 70px;
+}
+
+.e1 {
+  text-decoration: none;
+  color: #FE654F;
+  background-color: white;
+  border: black solid 4px;
+  top: 25px;
+  width: 135px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.e1:hover {
+  font-weight: bold;
+  background-color: #f3d79e;
+  color: #f74c32;
+}
+
+.e2 {
+  text-decoration: none;
+  color: #FE654F;
+  background-color: white;
+  border: black solid 4px;
+  top: 25px;
+  width: 135px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.e2:hover {
+  font-weight: bold;
+  background-color: #f3d79e;
+  color: #f74c32;
+}
+
+.e3 {
+  text-decoration: none;
+  color: #FE654F;
+  background-color: white;
+  border: black solid 4px;
+  top: 25px;
+  width: 135px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.e3:hover {
+  font-weight: bold;
+  background-color: #f3d79e;
+  color: #f74c32;
+}
+
+.publicidad {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: #D6EFFF;
+}
+
+.cuadroDelFooter {
+  background-color: #D6EFFF;
+  border: 5px solid black;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.whasa {
+  background-color: #D6EFFF;
+  width: 50px;
+  height: 50px;
+}
+
+.gmail {
+  background-color: #D6EFFF;
+  width: 90px;
+  height: 50px;
+}
+
+.ig {
+  background-color: #D6EFFF;
+  width: 90px;
+  height: 50px;
+}
+
+.gridPadre {
+  display: grid;
+  background-color: #D6EFFF;
+  gap: 50px;
+  grid-template-areas: "header header header" "nav img1 i1" "nav img2 i2" "nav img3 i3" "nav img4 i4" "footer footer footer";
+  grid-template-rows: 80px 25rem 20rem 20rem 20rem 75px;
+  grid-template-columns: 14% 27%;
+}
+
+img#img1 {
+  grid-area: img1;
+}
+
+img#img2 {
+  grid-area: img2;
+}
+
+img#img3 {
+  grid-area: img3;
+}
+
+img#img4 {
+  grid-area: img4;
+}
+
+section#i1 {
+  grid-area: i1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+}
+
+section#i2 {
+  grid-area: i2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section#i3 {
+  grid-area: i3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+}
+
+section#i4 {
+  grid-area: i4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+}
+
+.gridPadre1 {
+  display: grid;
+  background-color: #D6EFFF;
+  gap: 50px;
+  grid-template-areas: "header header header " "nav i5 i5 " "nav img5 i6 " "nav img6 i7 " "nav img7 i8 " "nav img8 i9 " "footer footer footer";
+  grid-template-rows: 90px 5rem 25rem 28rem 25rem 28rem 75px;
+  grid-template-columns: 14%;
+}
+
+img#img5 {
+  grid-area: img5;
+}
+
+img#img6 {
+  grid-area: img6;
+}
+
+img#img7 {
+  grid-area: img7;
+}
+
+img#img8 {
+  grid-area: img8;
+}
+
+section#i5 {
+  grid-area: i5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+}
+
+section#i6 {
+  grid-area: i6;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: start;
+  width: 100%;
+}
+
+section#i7 {
+  grid-area: i7;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: start;
+}
+
+section#i8 {
+  grid-area: i8;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: start;
+}
+
+section#i9 {
+  grid-area: i9;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: start;
+}
+
+.gridPadre2 {
+  display: grid;
+  background-color: #D6EFFF;
+  gap: 30px;
+  grid-template-areas: "header header header" "nav i10 i10" "nav i11 i11" "footer footer footer";
+  grid-template-rows: 10rem 5rem 40rem;
+  grid-template-columns: 14%;
+}
+
+section#i10 {
+  grid-area: i10;
+}
+
+section#i11 {
+  grid-area: i11;
+}
+
+.gridPadre3 {
+  width: 100%;
+  display: grid;
+  max-width: 100%;
+  background-color: #D6EFFF;
+  gap: 30px;
+  grid-template-areas: "header header header" "nav i12 i12" "nav i13 i13" "footer footer footer";
+  grid-template-rows: 10rem 10rem 30rem;
+  grid-template-columns: 14%;
+}
+
+section#i12 {
+  grid-area: i12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+section#i13 {
+  grid-area: i13;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 25px;
+}
+
+.gridPadre4 {
+  display: grid;
+  background-color: #D6EFFF;
+  gap: 30px;
+  grid-template-areas: "header header header" "i14 i14 i14" "footer footer footer";
+  grid-template-rows: 10rem 30rem 0rem;
+  grid-template-columns: 14%;
+}
+
+section#i14 {
+  grid-area: i14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1441px) {
+  .imagenes {
+    height: 300px;
+    width: 350px;
+  }
+  .titulos {
+    font-size: 50px;
+  }
+  .parrafo {
+    font-size: 40px;
+  }
+  .encabezado {
+    width: 100%;
+  }
+  .cajaDeLogo {
+    width: 100%;
+  }
+  .cajaDelCarrito {
+    width: 80%;
+  }
+  .navegador {
+    width: 100%;
+  }
+  .cuadroDelFooter {
+    width: 100%;
+  }
+  .gridPadre {
+    width: 100%;
+  }
+  .gridPadre1 {
+    width: 100%;
+  }
+  .gridPadre2 {
+    width: 100%;
+  }
+  img#img1 {
+    width: 100%;
+    height: 100%;
+  }
+  img#img2 {
+    width: 100%;
+    height: 100%;
+  }
+  img#img3 {
+    width: 100%;
+    height: 100%;
+  }
+  img#img4 {
+    width: 100%;
+    height: 100%;
+  }
+  img#img5 {
+    width: 100%;
+    height: 100%;
+  }
+  img#img6 {
+    width: 100%;
+    height: 100%;
+  }
+  img#img7 {
+    width: 100%;
+    height: 100%;
+  }
+  img#img8 {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .imagenes {
+    height: 250px;
+    width: 300px;
+  }
+  .titulos {
+    font-size: 40px;
+  }
+  .parrafo {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1023.98px) {
+  .imagenes {
+    height: 200px;
+    width: 250px;
+  }
+  .titulos {
+    font-size: 30px;
+  }
+  .parrafo {
+    font-size: 20px;
+  }
+}
+@media (max-width: 499.98px) {
+  .imagenes {
+    height: 150px;
+    width: 200px;
+  }
+  .titulos {
+    font-size: 40px;
+  }
+  .parrafo {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
