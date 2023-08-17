@@ -1,8 +1,3 @@
-/* index */
-/* productos */
-/* formulario */
-/* sobreMi */
-/* carrito */
 * {
   padding: 0;
   margin: 0;
@@ -12,18 +7,105 @@
 body {
   display: flex;
 }
-
-header {
+body header {
   grid-area: header;
   width: 100%;
 }
+body header div.cajaDeLogo {
+  height: 70px;
+  position: fixed;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  top: 14.5px;
+}
+body header div.cajaDelCarrito {
+  height: 70px;
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  right: 10px;
+}
+body header div.navegador {
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  position: fixed;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  right: 0px;
+  top: 70px;
+}
+body header div.navegador .e1 {
+  text-decoration: none;
+  color: #FE654F;
+  background-color: white;
+  border: black solid 4px;
+  top: 25px;
+  width: 135px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+body header div.navegador .e1:hover {
+  font-weight: bold;
+  background-color: #f3d79e;
+  color: #f74c32;
+}
+body header div.navegador .e2 {
+  text-decoration: none;
+  color: #FE654F;
+  background-color: white;
+  border: black solid 4px;
+  top: 25px;
+  width: 135px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+body header div.navegador .e2:hover {
+  font-weight: bold;
+  background-color: #f3d79e;
+  color: #f74c32;
+}
+body header div.navegador .e3 {
+  text-decoration: none;
+  color: #FE654F;
+  background-color: white;
+  border: black solid 4px;
+  top: 25px;
+  width: 135px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+body header div.navegador .e3:hover {
+  font-weight: bold;
+  background-color: #f3d79e;
+  color: #f74c32;
+}
 
-nav {
-  grid-area: nav;
+div.publicidad {
+  grid-area: pb;
 }
 
 footer {
   grid-area: footer;
+}
+footer .whasa {
+  background-color: #D6EFFF;
+  width: 50px;
+  height: 50px;
+}
+footer .gmail {
+  background-color: #D6EFFF;
+  width: 90px;
+  height: 50px;
+}
+footer .ig {
+  background-color: #D6EFFF;
+  width: 90px;
+  height: 50px;
 }
 
 .imagenes {
@@ -39,93 +121,6 @@ footer {
 .parrafo {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #FE654F;
-}
-
-.encabezado {
-  background-color: white;
-  border: 5px solid black;
-  height: 90px;
-  position: fixed;
-  z-index: 1000;
-}
-
-.cajaDeLogo {
-  height: 70px;
-  position: fixed;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  top: 14.5px;
-}
-
-.cajaDelCarrito {
-  height: 70px;
-  position: fixed;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  right: 10px;
-}
-
-.navegador {
-  font-size: 25px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-decoration: none;
-  position: fixed;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  right: 0px;
-  top: 70px;
-}
-
-.e1 {
-  text-decoration: none;
-  color: #FE654F;
-  background-color: white;
-  border: black solid 4px;
-  top: 25px;
-  width: 135px;
-  text-align: center;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
-}
-.e1:hover {
-  font-weight: bold;
-  background-color: #f3d79e;
-  color: #f74c32;
-}
-
-.e2 {
-  text-decoration: none;
-  color: #FE654F;
-  background-color: white;
-  border: black solid 4px;
-  top: 25px;
-  width: 135px;
-  text-align: center;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
-}
-.e2:hover {
-  font-weight: bold;
-  background-color: #f3d79e;
-  color: #f74c32;
-}
-
-.e3 {
-  text-decoration: none;
-  color: #FE654F;
-  background-color: white;
-  border: black solid 4px;
-  top: 25px;
-  width: 135px;
-  text-align: center;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
-}
-.e3:hover {
-  font-weight: bold;
-  background-color: #f3d79e;
-  color: #f74c32;
 }
 
 .publicidad {
@@ -144,29 +139,19 @@ footer {
   justify-content: flex-end;
 }
 
-.whasa {
-  background-color: #D6EFFF;
-  width: 50px;
-  height: 50px;
-}
-
-.gmail {
-  background-color: #D6EFFF;
-  width: 90px;
-  height: 50px;
-}
-
-.ig {
-  background-color: #D6EFFF;
-  width: 90px;
-  height: 50px;
+.encabezado {
+  background-color: white;
+  border: 5px solid black;
+  height: 90px;
+  position: fixed;
+  z-index: 1000;
 }
 
 .gridPadre {
   display: grid;
   background-color: #D6EFFF;
   gap: 50px;
-  grid-template-areas: "header header header" "nav img1 i1" "nav img2 i2" "nav img3 i3" "nav img4 i4" "footer footer footer";
+  grid-template-areas: "header header header" "pb img1 i1" "pb img2 i2" "pb img3 i3" "pb img4 i4" "footer footer footer";
   grid-template-rows: 80px 25rem 20rem 20rem 20rem 75px;
   grid-template-columns: 14% 27%;
 }
@@ -227,7 +212,7 @@ section#i4 {
   display: grid;
   background-color: #D6EFFF;
   gap: 50px;
-  grid-template-areas: "header header header " "nav i5 i5 " "nav img5 i6 " "nav img6 i7 " "nav img7 i8 " "nav img8 i9 " "footer footer footer";
+  grid-template-areas: "header header header " "pb i5 i5 " "pb img5 i6 " "pb img6 i7 " "pb img7 i8 " "pb img8 i9 " "footer footer footer";
   grid-template-rows: 90px 5rem 25rem 28rem 25rem 28rem 75px;
   grid-template-columns: 14%;
 }
@@ -298,7 +283,7 @@ section#i9 {
   display: grid;
   background-color: #D6EFFF;
   gap: 30px;
-  grid-template-areas: "header header header" "nav i10 i10" "nav i11 i11" "footer footer footer";
+  grid-template-areas: "header header header" "pb i10 i10" "pb i11 i11" "footer footer footer";
   grid-template-rows: 10rem 5rem 40rem;
   grid-template-columns: 14%;
 }
@@ -317,8 +302,8 @@ section#i11 {
   max-width: 100%;
   background-color: #D6EFFF;
   gap: 30px;
-  grid-template-areas: "header header header" "nav i12 i12" "nav i13 i13" "footer footer footer";
-  grid-template-rows: 10rem 10rem 30rem;
+  grid-template-areas: "header header header" "pb i12 i12" "pb i13 i13" "footer footer footer";
+  grid-template-rows: 5rem 10rem 30rem;
   grid-template-columns: 14%;
 }
 
@@ -344,7 +329,7 @@ section#i13 {
   background-color: #D6EFFF;
   gap: 30px;
   grid-template-areas: "header header header" "i14 i14 i14" "footer footer footer";
-  grid-template-rows: 10rem 30rem 0rem;
+  grid-template-rows: 10rem 30rem 4rem;
   grid-template-columns: 14%;
 }
 
