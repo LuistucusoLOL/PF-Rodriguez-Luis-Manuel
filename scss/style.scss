@@ -49,6 +49,10 @@ body {
                         font-weight: bold;
                         background-color: $background-color_2;
                         color: $color_2;
+						text-decoration: none;
+						width: 185px;
+						height: 41px;
+						
                     }
                     text-decoration: none;
                     color: $color_1;
@@ -58,12 +62,15 @@ body {
                     width: 135px;
                     text-align: center;
                     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+					transition: all 1s;
                 }
                 .e2 {
                     &:hover {
                         font-weight: bold;
                         background-color: $background-color_2;
                         color: $color_2;
+						width: 185px;
+						height: 41px;
                     }
                     text-decoration: none;
                     color: $color_1;
@@ -73,13 +80,15 @@ body {
                     width: 135px;
                     text-align: center;
                     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
-					
+					transition: all 1s;
                 }
                 .e3 {
                     &:hover {
                         font-weight: bold;
                         background-color: $background-color_2;
                         color: $color_2;
+						width: 185px;
+						height: 41px;
                     }
                     text-decoration: none;
                     color: $color_1;
@@ -89,10 +98,9 @@ body {
                     width: 135px;
                     text-align: center;
                     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+					transition: all 1s;
                 }
-
-
-
+	
             }
             
         }
@@ -120,7 +128,6 @@ body {
             height: 50px;
         }
     }
-    
 
 
 .imagenes {
