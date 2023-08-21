@@ -6,10 +6,6 @@
 body {
 	display: flex;
      }
-    
-    div.publicidad{
-        grid-area: pb;
-    }
 
 .imagenes {
 	margin-left: 20px;
@@ -20,6 +16,12 @@ body {
 	color: $color_1;
 	text-decoration: none;
 	font-size: 40px;
+}
+.titulos1{
+	font-family: $font-family_1;
+	color: $color_1;
+	text-decoration: none;
+	font-size: 240px;
 }
 
 .titulosq {

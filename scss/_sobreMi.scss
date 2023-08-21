@@ -1,15 +1,17 @@
 .gridPadre3 {
-	width: 100%;
 	display: grid;
-	max-width: 100%;
 	background-color: $background-color_3;
-	gap: 30px;
-	grid-template-areas: "header header header"
-     "pb i12 i12"
-      "pb i13 i13" 
-      "footer footer footer";
-	grid-template-rows: 5rem 10rem ;
-	grid-template-columns: 14%;
+	gap: 40px;
+	grid-template-areas: 
+	"header header"
+    "i12 i12"
+    "img9 i13" 
+    "footer footer";
+	grid-template-rows: 5rem 10rem 20rem 5rem;
+	grid-template-columns: 40%;
+}
+img#img9 {
+	grid-area: img9;
 }
 section#i12 {
 	grid-area: i12;
