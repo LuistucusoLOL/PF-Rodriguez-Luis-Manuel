@@ -1,0 +1,18 @@
+.gridPadre2 {
+	display: grid;
+	background-color: $background-color_3;
+	gap: 30px;
+	grid-template-areas: 
+    "header header header"
+     "pb i10 i10" 
+     "pb i11 i11" 
+     "footer footer footer";
+	grid-template-rows: 10rem 5rem 40rem;
+	grid-template-columns: 14%;
+}
+section#i10 {
+	grid-area: i10;
+}
+section#i11 {
+	grid-area: i11;
+}

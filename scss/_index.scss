@@ -1,0 +1,58 @@
+.gridPadre {
+	display: grid;
+	background-color: $background-color_3;
+	gap: 50px;
+	grid-template-areas: 
+    "header header header" 
+    "pb img1 i1" 
+    "pb img2 i2"
+    "pb img3 i3" 
+    "pb img4 i4" 
+    "footer footer footer";
+	grid-template-rows: 80px 25rem 20rem 20rem 20rem 75px;
+	grid-template-columns: 14% 27%;
+}
+img#img1 {
+	grid-area: img1;
+}
+img#img2 {
+	grid-area: img2;
+}
+img#img3 {
+	grid-area: img3;
+}
+img#img4 {
+	grid-area: img4;
+}
+section#i1 {
+	grid-area: i1;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: start;
+	justify-content: center;
+}
+section#i2 {
+	grid-area: i2;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+section#i3 {
+	grid-area: i3;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: start;
+	justify-content: center;
+}
+section#i4 {
+	grid-area: i4;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: start;
+	justify-content: center;
+}

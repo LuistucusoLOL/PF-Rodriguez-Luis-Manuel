@@ -1,0 +1,26 @@
+footer {
+    grid-area: footer;
+    .whasa {
+        background-image: linear-gradient(#f74c32, #fc9918);
+        width: 50px;
+        height: 50px;
+    }
+    .gmail {
+        background-image: linear-gradient(#f74c32, #fc9918);
+        width: 90px;
+        height: 50px;
+    }
+    .ig {
+        background-image: linear-gradient(#f74c32, #fc9918);
+        width: 90px;
+        height: 50px;
+    }
+}
+.cuadroDelFooter {
+	background-image: linear-gradient(#f74c32, #fc9918);
+	border: 5px solid black;
+	position: relative;
+	bottom: 0;
+	display: flex;
+	justify-content: flex-end;
+}

@@ -1,0 +1,99 @@
+header {
+    grid-area: header;
+    width: 100%;
+
+        div.cajaDeLogo {
+            height: 70px;
+            position: fixed;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            top: 14.5px;
+        }
+        div.cajaDelCarrito {
+            height: 70px;
+            position: fixed;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            right: 10px;
+        }
+        div.navegador {
+            font-size: 25px;
+            font-family: $font-family_1;
+            text-decoration: none;
+            position: fixed;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            right: 0px;
+            top: 70px;
+            .e1 {
+                &:hover {
+                    font-weight: bold;
+                    background-color: $background-color_2;
+                    color: $color_2;
+                    text-decoration: none;
+                    width: 185px;
+                    height: 41px;
+                    
+                }
+                text-decoration: none;
+                color: $color_1;
+                background-color: $background-color_1;
+                border: black solid 4px;
+                top: 25px;
+                width: 135px;
+                text-align: center;
+                box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+                transition: all 1s;
+            }
+            .e2 {
+                &:hover {
+                    font-weight: bold;
+                    background-color: $background-color_2;
+                    color: $color_2;
+                    width: 185px;
+                    height: 41px;
+                }
+                text-decoration: none;
+                color: $color_1;
+                background-color: $background-color_1;
+                border: black solid 4px;
+                top: 25px;
+                width: 135px;
+                text-align: center;
+                box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+                transition: all 1s;
+            }
+            .e3 {
+                &:hover {
+                    font-weight: bold;
+                    background-color: $background-color_2;
+                    color: $color_2;
+                    width: 185px;
+                    height: 41px;
+                }
+                text-decoration: none;
+                color: $color_1;
+                background-color: $background-color_1;
+                border: black solid 4px;
+                top: 25px;
+                width: 135px;
+                text-align: center;
+                box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+                transition: all 1s;
+            }
+
+        }
+        
+    }
+
+    .encabezado {
+        background-color: $background-color_1;
+        border: 5px solid black;
+        height: 90px;
+        position: fixed;
+        z-index: 1000;
+         }

@@ -1,0 +1,68 @@
+.gridPadre1 {
+	display: grid;
+	background-color: $background-color_3;
+	gap: 50px;
+	grid-template-areas: 
+    "header header header "
+    "pb i5 i5 "
+    "pb img5 i6 "
+    "pb img6 i7 "
+    "pb img7 i8 "
+    "pb img8 i9 "
+    "footer footer footer";
+	grid-template-rows: 90px 5rem 25rem 28rem 25rem 28rem 75px;
+	grid-template-columns: 14%;
+}
+img#img5 {
+	grid-area: img5;
+}
+img#img6 {
+	grid-area: img6;
+}
+img#img7 {
+	grid-area: img7;
+}
+img#img8 {
+	grid-area: img8;
+}
+section#i5 {
+	grid-area: i5;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: start;
+}
+section#i6 {
+	grid-area: i6;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: end;
+	justify-content: start;
+	width: 100%;
+}
+section#i7 {
+	grid-area: i7;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: end;
+	justify-content: start;
+}
+section#i8 {
+	grid-area: i8;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: end;
+	justify-content: start;
+}
+section#i9 {
+	grid-area: i9;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: end;
+	justify-content: start;
+}

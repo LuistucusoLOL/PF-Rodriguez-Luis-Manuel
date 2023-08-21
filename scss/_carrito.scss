@@ -1,0 +1,17 @@
+.gridPadre4 {
+	display: grid;
+	background-color: $background-color_3;
+	gap: 30px;
+	grid-template-areas: 
+    "header header header" 
+    "i14 i14 i14"
+     "footer footer footer";
+	grid-template-rows: 10rem 30rem 4rem;
+	grid-template-columns: 14%;
+}
+section#i14 {
+	grid-area: i14;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
