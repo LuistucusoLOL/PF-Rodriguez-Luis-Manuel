@@ -12,16 +12,31 @@ body {
     }
 
 .imagenes {
+	margin-left: 20px;
 	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
-.titulos {
+.titulos{
 	font-family: $font-family_1;
 	color: $color_1;
 	text-decoration: none;
+	font-size: 40px;
+}
+
+.titulosq {
+	
+	font-family: $font-family_1;
+	color: $color_1;
+	text-decoration: none;
+	font-size: 50px;
+	transition: all 1s;
+	&:hover{
+		font-size: 55px;
+	}
 }
 .parrafo {
 	font-family: $font-family_1;
 	color: $color_1;
+	margin: 10px;
 }
 @media (orientation: landscape) {
 	body {
