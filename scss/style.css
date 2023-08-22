@@ -525,7 +525,7 @@ section#i13 {
   background-color: #D6EFFF;
   gap: 20px;
   grid-template-areas: "header header" "i5 i5 " "img5 i6 " "img6 i7 " "img7 i8 " "img8 i9 " "footer footer";
-  grid-template-rows: 20px 30rem 30rem 30rem 30rem 75px;
+  grid-template-rows: 20px 30rem 30rem 30rem 30rem 30rem 75px;
   grid-template-columns: 40%;
 }
 
