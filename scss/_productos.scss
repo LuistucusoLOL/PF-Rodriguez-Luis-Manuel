@@ -1,7 +1,7 @@
 .gridPadre1 {
 	display: grid;
 	background-color: $background-color_3;
-	gap: 50px;
+	gap: 20px;
 	grid-template-areas: 
     "header header"
     "i5 i5 "
@@ -10,7 +10,7 @@
     "img7 i8 "
     "img8 i9 "
     "footer footer";
-	grid-template-rows: 25px 30rem 30rem 30rem 30rem 30rem 75px;
+	grid-template-rows: 20px  30rem 30rem 30rem 30rem 75px;
 	grid-template-columns: 40%;
 }
 img#img5 {
